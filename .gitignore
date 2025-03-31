@@ -5,3 +5,7 @@ vm/alpine-disk.qcow2
 # Other common files to ignore
 *.log
 .DS_Store
+*.iso
+build/iso_extract/boot/modloop-lts
+vm/alpine-disk.qcow2 vm/alpine-disk.qcow2 vm/alpine-disk.qcow2 vm/alpine-disk.qcow2 vm/alpine-disk.qcow2 vm/alpine-disk.qcow2 vm/alpine-disk.qcow2
+build/iso_extract/boot/modloop-lts
