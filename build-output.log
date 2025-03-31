@@ -1,0 +1,34 @@
+Extracting ISO contents...
+xorriso 1.5.4 : RockRidge filesystem manipulator, libburnia project.
+
+Copying of file objects from ISO image to disk filesystem is: Enabled
+xorriso : NOTE : Loading ISO image tree from LBA 0
+xorriso : UPDATE :     124 nodes read in 1 seconds
+xorriso : NOTE : Detected El-Torito boot information which currently is set to be discarded
+Drive current: -indev '/os-project/iso/alpine-standard-3.18.0-x86_64.iso'
+Media current: stdio file, overwriteable
+Media status : is written , is appendable
+Boot record  : El Torito , MBR isohybrid cyl-align-on GPT
+Media summary: 1 session, 96768 data blocks,  189m data,  937g free
+Volume id    : 'alpine-std 3.18.0 x86_64'
+xorriso : UPDATE :     116 files restored ( 187.7m) in 1 seconds = 142.1xD
+Extracted from ISO image: file '/'='/os-project/build/iso_extract'
+Creating new ISO...
+xorriso 1.5.4 : RockRidge filesystem manipulator, libburnia project.
+
+Drive current: -outdev 'stdio:/os-project/iso/os-project-cloud-alpine-3.18.iso'
+Media current: stdio file, overwriteable
+Media status : is blank
+Media summary: 0 sessions, 0 data blocks, 0 data,  937g free
+xorriso : WARNING : -volid text does not comply to ISO 9660 / ECMA 119 rules
+Added to ISO image: directory '/'='/os-project/build/iso_extract'
+xorriso : UPDATE :     131 files added in 1 seconds
+xorriso : UPDATE :     131 files added in 1 seconds
+xorriso : NOTE : Copying to System Area: 432 bytes from file '/usr/lib/ISOLINUX/isohdpfx.bin'
+libisofs: NOTE : Aligned image size to cylinder size by 375 blocks
+xorriso : UPDATE :  27.22% done
+ISO image produced: 96768 sectors
+Written to medium : 96768 sectors at LBA 0
+Writing to 'stdio:/os-project/iso/os-project-cloud-alpine-3.18.iso' completed successfully.
+
+Custom ISO created: /os-project/iso/os-project-cloud-alpine-3.18.iso

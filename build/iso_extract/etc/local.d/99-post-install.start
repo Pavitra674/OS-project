@@ -1,0 +1,38 @@
+#!/bin/sh
+# OS-project: Post-installation configuration
+
+# Enable community repository if not already enabled
+sed -i -e '/community/ s/^#//' /etc/apk/repositories
+
+# Update package index
+apk update
+
+# Install Docker
+echo "Installing Docker..."
+apk add docker
+rc-update add docker default
+service docker start
+
+# Install Kubernetes tools
+echo "Installing Kubernetes tools..."
+apk add kubectl
+
+# Install Terraform
+echo "Installing Terraform..."
+apk add terraform
+
+# Install Ansible
+echo "Installing Ansible..."
+apk add ansible
+
+# Install monitoring and logging tools
+echo "Installing monitoring and logging tools..."
+apk add prometheus node_exporter grafana loki promtail
+
+# Basic system utilities
+apk add curl wget git vim
+
+# Cleanup
+rm /etc/local.d/99-post-install.start
+
+echo "Post-installation setup complete!"

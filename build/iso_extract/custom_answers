@@ -1,0 +1,16 @@
+# Alpine Linux installation answer file
+KEYMAPOPTS="us us"
+HOSTNAMEOPTS="-n os-project-cloud"
+INTERFACESOPTS="auto lo
+iface lo inet loopback
+
+auto eth0
+iface eth0 inet dhcp
+"
+DNSOPTS="-d local -n 8.8.8.8 8.8.4.4"
+TIMEZONEOPTS="-z UTC"
+PROXYOPTS="none"
+APKREPOSOPTS="-1"
+SSHDOPTS="-c openssh"
+NTPOPTS="-c chrony"
+DISKOPTS="-m sys /dev/sda"
